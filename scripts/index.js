@@ -10,6 +10,7 @@ fetch("http://localhost:8081/api/courses")
            let cell2 = row.insertCell(1);
            let cell3 = row.insertCell(2);
            let cell4 = row.insertCell(3);
+           let cell5 = row.insertCell(4);
            
            cell1.innerHTML = data[i].dept;
            cell2.innerHTML = data[i].courseNum;
@@ -22,6 +23,10 @@ fetch("http://localhost:8081/api/courses")
            anchor.text = "See details";  
            cell4.appendChild(anchor);
            
+           let delanchor = document.createElement("a");
+           delanchor.href = `confirm-delete.html?cid=${data[i].id}`;
+           delanchor.text = "Delete Course";  
+           cell5.appendChild(delanchor);
 
         }
      });

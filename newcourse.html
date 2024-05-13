@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new course</title>
+</head>
+<body>
+
+    <h2>Add a new course!</h2>
+
+    
+        <br><br>
+        
+
+        <label for="">Department : </label>
+        <input type="text" required id="department">
+        <br><br>
+
+        <label for="">Course Number : </label>
+        <input type="text" required  id="coursenum">
+        <br><br>
+
+        <label for="">Course Name : </label>
+        <input type="text" required  id="coursename">
+        <br><br>
+
+        <label for="">Instructor : </label>
+        <input type="text" required  id="inst">
+        <br><br>
+
+        <label for="">Start Date : </label>
+        <input type="text" required  id="sd">
+        <br><br>
+
+        <label for="">Number of Days : </label>
+        <input type="text" required id="nod">
+        <br><br>
+
+        <input type="button" value="Submit New Course" onclick="addNewCourse()">
+   
+
+    <p id="confirmationMessage"></p>
+    <script src="./scripts/newcourse.js"></script>
+
+    
+</body>
+</html>
